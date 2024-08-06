@@ -9,6 +9,7 @@ const USER=require('./models/userSchema')
 console.log(DB)
 mongoose.connect(DB).then(()=>console.log("connection successful")).catch(()=>console.log("caught"))
 const app=express()
+//comment
 app.use(express.json())
 const middleware=(req,res,next)=>{
     console.log("in middleware...")
