@@ -11,6 +11,7 @@ mongoose.connect(DB).then(()=>console.log("connection successful")).catch(()=>co
 const app=express()
 //comment
 //comment 3
+// comment 2
 app.use(express.json())
 const middleware=(req,res,next)=>{
     console.log("in middleware...")
